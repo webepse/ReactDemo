@@ -18,6 +18,9 @@ class App extends Component {
           <Membre nom="Catwoman" />
           <Membre nom="Superman" />
           <Membre nom="Wonder Woman" />
+          <Membre nom="Ace">
+            Je suis le Batdog
+          </Membre>
         </Fragment>
       //React.createElement('div', {className: 'App'}, React.createElement('h1',null,'React App'))
     )

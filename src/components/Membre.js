@@ -9,11 +9,12 @@ import React from 'react'; // quand on n'indique rien sur le path, on fait ref Ã
 //      );
 // }
 
-const Membre = ({nom}) => {
+const Membre = ({nom, children}) => {
    
     return ( 
         <>
             <h2>Membre  : {nom.toUpperCase()}</h2>
+            { children ? <p>{children}</p> : null}
         </>
      );
 }
