@@ -54,6 +54,12 @@ class App extends Component {
       )
     })
 
+    let description = null 
+
+    if(this.state.isShow){
+      description = (<strong>Je suis le Bat-Dog</strong>)
+    }
+
 
     return(
         <Fragment>
@@ -82,15 +88,17 @@ class App extends Component {
           <Membre 
           age="2"
           nom="Ace">
+
             {/* on ne peut avoir de block { } à l'intérieur d'un autre block */}
-            {
-              this.state.isShow ? <strong>Je suis le Bat-Dog</strong> : null
-            }
+
+          {description}
+
             <button onClick={this.handleShow}>
               {
                 this.state.isShow ? 'Cacher' : 'Montrer'
               }
             </button>
+
           </Membre>
           <Button 
           nb={nb}
